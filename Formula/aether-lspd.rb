@@ -1,19 +1,19 @@
 class AetherLspd < Formula
   desc "LSP daemon for sharing language servers across multiple agents"
-  homepage "https://github.com/contextbridge/aether"
+  homepage "https://github.com/jcarver989/aether"
   version "0.1.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/contextbridge/aether/releases/download/v0.1.1/aether-lspd-aarch64-apple-darwin.tar.xz"
-    sha256 "869f7745ce08c02d6dc1359e9000c802332b9d33cdb2267a092a0e3156590993"
+    url "https://github.com/jcarver989/aether/releases/download/v0.1.1/aether-lspd-aarch64-apple-darwin.tar.xz"
+    sha256 "c89bdf5c50ea1475023e658e589500a74c86fc058233d3506991fd4298ea6da0"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/contextbridge/aether/releases/download/v0.1.1/aether-lspd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c188b944bb422bb1c8a85da436cdd2026c22127f29bd782ba34a0d0ce49e7ab6"
+      url "https://github.com/jcarver989/aether/releases/download/v0.1.1/aether-lspd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1d4cdd0d1a87241be019625a3d81749bf7d33af88de388ba38ef322ea45e6347"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/contextbridge/aether/releases/download/v0.1.1/aether-lspd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9904569f2873e1c7538195af6e897b309f04eae1c1e8a4cb1f649d1456dcce4d"
+      url "https://github.com/jcarver989/aether/releases/download/v0.1.1/aether-lspd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0f16d6a42c9407fab82e544dbf15c856e1a0cf40c2094df7f03e92acdf7700d3"
     end
   end
   license "MIT"
