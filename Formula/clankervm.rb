@@ -1,25 +1,25 @@
 class Clankervm < Formula
   desc "Build and run arbitrary commands in AWS Lambda MicroVMs"
   homepage "https://github.com/jcarver989/clankervm"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-aarch64-apple-darwin.tar.xz"
-      sha256 "ec821fe3b94a44f66bd6490d6d1cab001b33acd52998c7f6181b2e869710e758"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.3/clankervm-aarch64-apple-darwin.tar.xz"
+      sha256 "9555a3db6323d24bcf90ba020f4843095def99ca1889ef5fbd6e149c64fbdbfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-x86_64-apple-darwin.tar.xz"
-      sha256 "50aeb5b33c0a85458888b815c5ddfd38774ea5d91cc486140a6490c767742b1f"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.3/clankervm-x86_64-apple-darwin.tar.xz"
+      sha256 "4d7124d89e94150e8645d59943fa179c4f1759c169a9be4b075706b1ba0ad147"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "57b194b7435bea2d5ee64b54100d03229e84c1bc72f0593df2bd859e673712e0"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.3/clankervm-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7c3e4168e1051c2c4350a51687c1bb7ccf59ec7d46568ec80b0d3d4be71c688c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1451d6547988661887e789b7c6b3cbd12a452e8343e22a6d6563dd7dab0c14d5"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.3/clankervm-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "468dd1842e021f329d9bee39b65ed04d10bfcaf43030deb9a8726b491c1a30bf"
     end
   end
   license "MIT"
