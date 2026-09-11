@@ -1,25 +1,25 @@
 class Clankervm < Formula
   desc "Build and run arbitrary commands in AWS Lambda MicroVMs"
   homepage "https://github.com/jcarver989/clankervm"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.1/clankervm-aarch64-apple-darwin.tar.xz"
-      sha256 "b273ae7dc5ca6ede9483b44cd75444800891e4cea04f618872964330515efc82"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-aarch64-apple-darwin.tar.xz"
+      sha256 "ec821fe3b94a44f66bd6490d6d1cab001b33acd52998c7f6181b2e869710e758"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.1/clankervm-x86_64-apple-darwin.tar.xz"
-      sha256 "3d0fe6c278757b4074863fc5c379e31dd96461770185623fe1b4f80ddea842de"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-x86_64-apple-darwin.tar.xz"
+      sha256 "50aeb5b33c0a85458888b815c5ddfd38774ea5d91cc486140a6490c767742b1f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.1/clankervm-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "446a621915fe9ade03bd88ae55fb5bc3d29d62adf3668e6334ee8c07596f38b1"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "57b194b7435bea2d5ee64b54100d03229e84c1bc72f0593df2bd859e673712e0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.1/clankervm-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e5f48e18a5ba2a53b6593e4d4e6ef19d2ddf1f512f61052f77c50ebad9cb9b52"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-v0.1.2/clankervm-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1451d6547988661887e789b7c6b3cbd12a452e8343e22a6d6563dd7dab0c14d5"
     end
   end
   license "MIT"
