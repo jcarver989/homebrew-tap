@@ -1,15 +1,15 @@
 class ClankervmServer < Formula
   desc "Hook server for supervising commands in AWS Lambda MicroVMs"
   homepage "https://github.com/jcarver989/clankervm"
-  version "0.1.6"
+  version "0.1.7"
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-server-v0.1.6/clankervm-server-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e757dbf7cf974d5ab3f380847685046b101b7ceffda922c7db2e7df0a47315dc"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-server-v0.1.7/clankervm-server-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8812da22961e13c2bb4576ce6933bb974b83af1eafdc98ec21825af2570d18ac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-server-v0.1.6/clankervm-server-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f65f2654fe87b398936aca031b8588e4a461b4cfab7ae6979416d4c8ce6b0368"
+      url "https://github.com/jcarver989/clankervm/releases/download/clankervm-server-v0.1.7/clankervm-server-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aef5100bd177c48f8b06a9d934c31ee4680d2f51fd2623214ae8885ca96ae671"
     end
   end
   license "MIT"
